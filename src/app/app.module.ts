@@ -7,6 +7,7 @@ import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { StudentSearchComponent } from './student-search/student-search.component';
 import { StudentEditComponent } from './student-edit/student-edit.component';
 import { StudentDeleteComponent } from './student-delete/student-delete.component';
+import { StudentViewComponent } from './student-view/student-view.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { StudentDeleteComponent } from './student-delete/student-delete.componen
     StudentEntryComponent,
     StudentSearchComponent,
     StudentEditComponent,
-    StudentDeleteComponent
+    StudentDeleteComponent,
+    StudentViewComponent
   ],
   imports: [
     BrowserModule,
