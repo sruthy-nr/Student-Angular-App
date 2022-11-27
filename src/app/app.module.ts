@@ -8,7 +8,30 @@ import { StudentSearchComponent } from './student-search/student-search.componen
 import { StudentEditComponent } from './student-edit/student-edit.component';
 import { StudentDeleteComponent } from './student-delete/student-delete.component';
 import { StudentViewComponent } from './student-view/student-view.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const myRoute:Routes=[
+  {
+    path:"",
+    component:StudentEntryComponent
+  },
+  {
+    path:"edit",
+    component:StudentEditComponent
+  },
+  {
+    path:"search",
+    component:StudentSearchComponent
+  },
+  {
+    path:"delete",
+    component:StudentDeleteComponent
+  },
+  {
+    path:"view",
+    component:StudentViewComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +43,8 @@ import { StudentViewComponent } from './student-view/student-view.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
