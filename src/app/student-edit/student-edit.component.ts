@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./student-edit.component.css']
 })
 export class StudentEditComponent {
-
+  adm=""
+  
+  edit=()=>{
+    let data:any={
+      "adm":this.adm }
+    console.log(data)
+  }
 }
