@@ -9,6 +9,7 @@ import { StudentEditComponent } from './student-edit/student-edit.component';
 import { StudentDeleteComponent } from './student-delete/student-delete.component';
 import { StudentViewComponent } from './student-view/student-view.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -39,7 +40,8 @@ const myRoute:Routes=[
     StudentSearchComponent,
     StudentEditComponent,
     StudentDeleteComponent,
-    StudentViewComponent
+    StudentViewComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
